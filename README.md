@@ -85,7 +85,7 @@ O sistema possui os seguintes módulos principais:
 
 # 🧰 Tecnologias Utilizadas
 
-O sistema foi desenvolvido utilizando tecnologias simples e acessíveis para facilitar o aprendizado e execução local.
+O sistema sera desenvolvido utilizando tecnologias simples e acessíveis para facilitar o aprendizado e execução local.
 
 ### Frontend
 
