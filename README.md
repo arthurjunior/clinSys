@@ -40,7 +40,7 @@ O **SysClin** permite:
 * Controle básico de pagamentos
 * Visualização de informações administrativas
 
-Este sistema foi desenvolvido como um **MVP (Minimum Viable Product)** com foco em demonstrar a solução proposta, não sendo um sistema comercial completo.
+Este sistema sera desenvolvido como um **MVP (Minimum Viable Product)** com foco em demonstrar a solução proposta, não sendo um sistema comercial completo.
 
 ---
 
@@ -141,6 +141,6 @@ O **SysClin** representa um **MVP funcional**, demonstrando como a tecnologia po
 
 
 
-# 👨‍💻 Autor
+# 👨‍💻
 
 Projeto desenvolvido para fins acadêmicos no curso da área de Tecnologia da Informação.
