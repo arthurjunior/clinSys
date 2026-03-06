@@ -128,45 +128,6 @@ sysclin
 
 ---
 
-# 🚀 Como Executar o Projeto
-
-1. Clone o repositório
-
-```
-git clone https://github.com/seuusuario/sysclin.git
-```
-
-2. Acesse a pasta do projeto
-
-```
-cd sysclin
-```
-
-3. Execute a aplicação
-
-```
-python app.py
-```
-
-4. Abra o navegador e acesse
-
-```
-http://localhost:5000
-```
-
----
-
-# 🔑 Usuário de Acesso
-
-Usuário padrão para login no sistema:
-
-```
-Usuário: admin
-Senha: 1234
-```
-
----
-
 # 🎓 Objetivo Acadêmico
 
 Este projeto foi desenvolvido com fins **educacionais**,
