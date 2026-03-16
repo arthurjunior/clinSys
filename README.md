@@ -67,20 +67,20 @@ Atualmente os dados são armazenados **localmente no navegador**, apenas para de
 ---
 
 # 📁 Estrutura do Projeto
+
 clinsys
 │
 ├── templates
-│ ├── login.html
-│ ├── dashboard.html
-│ ├── pacientes.html
-│ ├── agendamentos.html
-│ ├── atendimentos.html
-│ └── financeiro.html
+│   ├── login.html
+│   ├── dashboard.html
+│   ├── pacientes.html
+│   ├── agendamentos.html
+│   ├── atendimentos.html
+│   └── financeiro.html
 │
 └── static
-├── css
-└── js
-
+    ├── css
+    └── js
 
 ---
 
