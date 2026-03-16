@@ -111,13 +111,13 @@ Este projeto foi desenvolvido para fins educacionais no curso da área de **Tecn
 ---
 
 # 👨‍💻 Autor
-
+```
 Grupo academico 
 Arthur Carvalho
 Erich Mark
 Danilo Clever
 Lael Lucas
 Robison Nascimento
-
+```
 
 Projeto acadêmico — Tecnologia da Informação
