@@ -67,6 +67,8 @@ Atualmente os dados são armazenados **localmente no navegador**, apenas para de
 ---
 
 # 📁 Estrutura do Projeto
+
+```
 clinsys
 │
 ├── templates
@@ -80,8 +82,7 @@ clinsys
 └── static
     ├── css
     └── js
-    
----
+```
 
 # 📌 Status do Projeto
 
