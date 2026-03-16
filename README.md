@@ -1,120 +1,76 @@
-# 🏥 SysClin — Sistema de Gestão para Clínica de Pilates (MVP)
+🏥 ClinSys
+Sistema de Gestão para Clínica de Pilates (MVP)
 
-# Protótipo
+O ClinSys é um sistema web desenvolvido como projeto acadêmico, com o objetivo de demonstrar como a tecnologia pode auxiliar na organização e gestão de uma Clínica de Pilates e Reabilitação.
+
+O sistema centraliza informações importantes da clínica, como pacientes, agendamentos e atendimentos, substituindo processos manuais como agendas físicas e controles informais.
+
+📌 Protótipo da Interface
+
+O design inicial do sistema foi desenvolvido utilizando o Figma para prototipação da interface antes da implementação.
+
+🔗 Protótipo:
 https://www.figma.com/design/K3aVnnjGq4i3eAUK7iaOkU/SisClyn-Font-End?node-id=7304-1875&m=dev&t=8V4mumvepCc2QUyk-1
 
-O **SysClin** é um sistema web simples desenvolvido como **protótipo acadêmico (MVP)** para auxiliar na gestão de uma **Clínica de Pilates e Reabilitação**.
+⚠️ Problema Identificado
 
-O objetivo do projeto é demonstrar como a informatização pode melhorar a organização de clínicas que ainda utilizam processos manuais, como agendas físicas e comunicação informal.
+Durante o estudo de caso da clínica foram observados alguns problemas operacionais:
 
-O sistema centraliza informações de **pacientes, agendamentos, atendimentos e pagamentos**, facilitando o controle administrativo e a organização dos serviços prestados pela clínica.
+uso de agendas físicas para controle de atendimentos
 
----
+agendamentos feitos de forma informal
 
-# 📌 Problema Identificado
+comunicação entre profissionais via WhatsApp
 
-Durante o estudo de caso da clínica, foram identificados alguns problemas operacionais, tais como:
+dificuldade no acompanhamento da evolução dos pacientes
 
-* Atendimentos organizados manualmente em agendas físicas
-* Agendamentos feitos de forma informal
-* Comunicação entre profissionais via WhatsApp
-* Falta de padronização nos atendimentos
-* Dificuldade em acompanhar a evolução dos pacientes
-* Controle financeiro descentralizado
-* Falta de relatórios administrativos
+controle financeiro descentralizado
 
-Esses fatores acabam gerando **desorganização, atrasos e dificuldade na gestão das informações da clínica**.
+Esses fatores podem gerar desorganização e dificultar a gestão das informações da clínica.
 
----
+💡 Solução Proposta
 
-# 💡 Solução Proposta
+O ClinSys propõe um sistema simples para centralizar essas informações e facilitar o controle administrativo da clínica.
 
-A solução proposta é o desenvolvimento de um **sistema web simples de gestão clínica**, capaz de centralizar as informações e auxiliar no controle das atividades da clínica.
+Principais funcionalidades do sistema:
 
-O **SysClin** permite:
+cadastro de pacientes
 
-* Cadastro de pacientes
-* Organização de agendamentos
-* Registro de atendimentos realizados
-* Histórico de evolução dos pacientes
-* Controle básico de pagamentos
-* Visualização de informações administrativas
+organização de agendamentos
 
-Este sistema sera desenvolvido como um **MVP (Minimum Viable Product)** com foco em demonstrar a solução proposta, não sendo um sistema comercial completo.
+registro de atendimentos
 
----
+histórico de evolução dos pacientes
 
-# ⚙️ Funcionalidades do Sistema
+controle básico de pagamentos
 
-O sistema possui os seguintes módulos principais:
+dashboard com indicadores do sistema
 
-## 🔐 Login
+⚙️ Tecnologias Utilizadas
+Frontend
 
-* Autenticação simples de usuário
-* Controle básico de acesso ao sistema
+HTML
 
-## 📊 Dashboard
+CSS
 
-* Visualização rápida de indicadores
-* Total de pacientes cadastrados
-* Agendamentos do dia
-* Atendimentos realizados
+Bootstrap
 
-## 👤 Pacientes
+JavaScript
 
-* Cadastro de pacientes
-* Edição e exclusão de registros
-* Visualização em tabela
+Armazenamento de Dados (MVP)
 
-## 📅 Agendamentos
+Atualmente os dados são armazenados localmente no navegador, apenas para demonstração das funcionalidades do sistema.
 
-* Criação de agendamentos
-* Associação entre paciente e profissional
-* Organização de horários
+Tecnologias Planejadas (Futuro)
 
-## 🩺 Atendimentos
+Python
 
-* Registro de atendimentos realizados
-* Histórico de evolução do paciente
-* Observações clínicas
+Flask
 
-## 💰 Financeiro
+SQLite
 
-* Controle simples de mensalidades
-* Registro de pagamentos
-* Status de pagamento (Pago / Pendente)
-
----
-
-# 🧰 Tecnologias Utilizadas
-
-O sistema sera desenvolvido utilizando tecnologias simples e acessíveis para facilitar o aprendizado e execução local.
-
-### Frontend
-
-* HTML
-* CSS
-* Bootstrap
-* JavaScript
-
-### Backend
-
-* Python
-* Flask
-
-### Banco de Dados
-
-* SQLite
-
----
-
-# 📁 Estrutura do Projeto
-
-```
-sysclin
-│
-├── app.py
-├── database.db
+📁 Estrutura do Projeto
+clinsys
 │
 ├── templates
 │   ├── login.html
@@ -127,20 +83,35 @@ sysclin
 └── static
     ├── css
     └── js
-```
+📌 Status do Projeto
 
----
+🚧 MVP (Minimum Viable Product)
 
-# 🎓 Objetivo Acadêmico
+O projeto atualmente demonstra a interface e o fluxo do sistema.
+A implementação de backend e banco de dados real está prevista para futuras versões.
 
-Este projeto foi desenvolvido com fins **educacionais**,
+🤖 Ferramentas de Apoio
 
-O **SysClin** representa um **MVP funcional**, demonstrando como a tecnologia pode melhorar a gestão de uma clínica.
+Durante o desenvolvimento foram utilizadas ferramentas de apoio baseadas em IA:
 
----
+Cursor
+
+ChatGPT
+
+Essas ferramentas foram utilizadas para auxiliar na organização do código e documentação do projeto.
+
+🎓 Objetivo Acadêmico
+
+Este projeto foi desenvolvido para fins educacionais no curso da área de Tecnologia da Informação, demonstrando a aplicação prática de conceitos de desenvolvimento web e prototipação de sistemas.
+
+👨‍💻 Autor
+
+Grupo academico 
+Arthur Carvalho
+Erich Mark
+Danilo Clever
+Lael Lucas
+Robison Nascimento
 
 
-
-# 👨‍💻
-
-Projeto desenvolvido para fins acadêmicos no curso da área de Tecnologia da Informação.
+Projeto acadêmico — Tecnologia da Informação
