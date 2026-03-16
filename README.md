@@ -1,3 +1,14 @@
+## 🌐 Demonstração do Sistema
+
+🔗 Acesse online:  
+https://arthurjunior.github.io/clinSys/
+
+## 📱 Acesso rápido via QR Code
+
+<p align="center">
+<img src="qrcode-clinsys.png" width="200">
+</p>
+
 # 🏥 ClinSys
 ### Sistema de Gestão para Clínica de Pilates (MVP)
 
