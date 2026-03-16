@@ -1,110 +1,116 @@
-🏥 ClinSys
-Sistema de Gestão para Clínica de Pilates (MVP)
+# 🏥 ClinSys
+### Sistema de Gestão para Clínica de Pilates (MVP)
 
-O ClinSys é um sistema web desenvolvido como projeto acadêmico, com o objetivo de demonstrar como a tecnologia pode auxiliar na organização e gestão de uma Clínica de Pilates e Reabilitação.
+O **ClinSys** é um sistema web desenvolvido como **projeto acadêmico**, com o objetivo de demonstrar como a tecnologia pode auxiliar na organização e gestão de uma **Clínica de Pilates e Reabilitação**.
 
 O sistema centraliza informações importantes da clínica, como pacientes, agendamentos e atendimentos, substituindo processos manuais como agendas físicas e controles informais.
 
-📌 Protótipo da Interface
+---
 
-O design inicial do sistema foi desenvolvido utilizando o Figma para prototipação da interface antes da implementação.
+# 📌 Protótipo da Interface
 
-🔗 Protótipo:
+O design inicial do sistema foi desenvolvido utilizando o **Figma** para prototipação da interface antes da implementação.
+
+🔗 Protótipo:  
 https://www.figma.com/design/K3aVnnjGq4i3eAUK7iaOkU/SisClyn-Font-End?node-id=7304-1875&m=dev&t=8V4mumvepCc2QUyk-1
 
-⚠️ Problema Identificado
+---
+
+# ⚠️ Problema Identificado
 
 Durante o estudo de caso da clínica foram observados alguns problemas operacionais:
 
-uso de agendas físicas para controle de atendimentos
-
-agendamentos feitos de forma informal
-
-comunicação entre profissionais via WhatsApp
-
-dificuldade no acompanhamento da evolução dos pacientes
-
-controle financeiro descentralizado
+- uso de agendas físicas para controle de atendimentos  
+- agendamentos feitos de forma informal  
+- comunicação entre profissionais via WhatsApp  
+- dificuldade no acompanhamento da evolução dos pacientes  
+- controle financeiro descentralizado  
 
 Esses fatores podem gerar desorganização e dificultar a gestão das informações da clínica.
 
-💡 Solução Proposta
+---
 
-O ClinSys propõe um sistema simples para centralizar essas informações e facilitar o controle administrativo da clínica.
+# 💡 Solução Proposta
+
+O **ClinSys** propõe um sistema simples para centralizar essas informações e facilitar o controle administrativo da clínica.
 
 Principais funcionalidades do sistema:
 
-cadastro de pacientes
+- cadastro de pacientes  
+- organização de agendamentos  
+- registro de atendimentos  
+- histórico de evolução dos pacientes  
+- controle básico de pagamentos  
+- dashboard com indicadores do sistema  
 
-organização de agendamentos
+---
 
-registro de atendimentos
+# ⚙️ Tecnologias Utilizadas
 
-histórico de evolução dos pacientes
+## Frontend
 
-controle básico de pagamentos
+- HTML  
+- CSS  
+- Bootstrap  
+- JavaScript  
 
-dashboard com indicadores do sistema
+## Armazenamento de Dados (MVP)
 
-⚙️ Tecnologias Utilizadas
-Frontend
+Atualmente os dados são armazenados **localmente no navegador**, apenas para demonstração das funcionalidades do sistema.
 
-HTML
+## Tecnologias Planejadas (Futuro)
 
-CSS
+- Python  
+- Flask  
+- SQLite  
 
-Bootstrap
+---
 
-JavaScript
-
-Armazenamento de Dados (MVP)
-
-Atualmente os dados são armazenados localmente no navegador, apenas para demonstração das funcionalidades do sistema.
-
-Tecnologias Planejadas (Futuro)
-
-Python
-
-Flask
-
-SQLite
-
-📁 Estrutura do Projeto
+# 📁 Estrutura do Projeto
 clinsys
 │
 ├── templates
-│   ├── login.html
-│   ├── dashboard.html
-│   ├── pacientes.html
-│   ├── agendamentos.html
-│   ├── atendimentos.html
-│   └── financeiro.html
+│ ├── login.html
+│ ├── dashboard.html
+│ ├── pacientes.html
+│ ├── agendamentos.html
+│ ├── atendimentos.html
+│ └── financeiro.html
 │
 └── static
-    ├── css
-    └── js
-📌 Status do Projeto
+├── css
+└── js
 
-🚧 MVP (Minimum Viable Product)
 
-O projeto atualmente demonstra a interface e o fluxo do sistema.
-A implementação de backend e banco de dados real está prevista para futuras versões.
+---
 
-🤖 Ferramentas de Apoio
+# 📌 Status do Projeto
+
+🚧 **MVP (Minimum Viable Product)**  
+
+O projeto atualmente demonstra a interface e o fluxo do sistema.  
+A implementação de **backend e banco de dados real** está prevista para futuras versões.
+
+---
+
+# 🤖 Ferramentas de Apoio
 
 Durante o desenvolvimento foram utilizadas ferramentas de apoio baseadas em IA:
 
-Cursor
+- Cursor (editor de código com suporte a IA)
+- ChatGPT (auxílio na documentação e suporte ao desenvolvimento)
 
-ChatGPT
+Essas ferramentas foram utilizadas apenas como **apoio ao processo de desenvolvimento**.
 
-Essas ferramentas foram utilizadas para auxiliar na organização do código e documentação do projeto.
+---
 
-🎓 Objetivo Acadêmico
+# 🎓 Objetivo Acadêmico
 
-Este projeto foi desenvolvido para fins educacionais no curso da área de Tecnologia da Informação, demonstrando a aplicação prática de conceitos de desenvolvimento web e prototipação de sistemas.
+Este projeto foi desenvolvido para fins educacionais no curso da área de **Tecnologia da Informação**, demonstrando a aplicação prática de conceitos de desenvolvimento web e prototipação de sistemas.
 
-👨‍💻 Autor
+---
+
+# 👨‍💻 Autor
 
 Grupo academico 
 Arthur Carvalho
