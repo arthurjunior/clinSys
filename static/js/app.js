@@ -195,7 +195,8 @@ function setupLogin() {
       aplicarEstadoLogado(true);
       showAlert("Login realizado com sucesso.");
     } else {
-      showAlert("Usuário ou senha inválidos.", "danger");
+      document.getElementById("login-alert").innerHTML =
+  `<div class="alert alert-danger">Usuário ou senha inválidos.</div>`;
     }
   });
 
