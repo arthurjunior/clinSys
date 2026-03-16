@@ -12,7 +12,7 @@ O sistema centraliza informações importantes da clínica, como pacientes, agen
 O design inicial do sistema foi desenvolvido utilizando o **Figma** para prototipação da interface antes da implementação.
 
 🔗 Protótipo:  
-https://www.figma.com/design/K3aVnnjGq4i3eAUK7iaOkU/SisClyn-Font-End?node-id=7304-1875&m=dev&t=8V4mumvepCc2QUyk-1
+https://www.figma.com/design/K3aVnnjGq4i3eAUK7iaOkU/ClinSys-Font-End?node-id=7304-1875&t=ctKB44j6Cj99bbgG-1
 
 ---
 
