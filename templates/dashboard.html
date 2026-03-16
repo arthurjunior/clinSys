@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h1 class="mb-1">Dashboard</h1>
+  <p class="text-muted mb-4">
+    Visão geral da clínica de Pilates e Reabilitação SisClyn.
+  </p>
+
+  <!-- Cards de indicadores (parecido com o modelo da imagem) -->
+  <div class="row g-3 mb-4">
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="text-muted small">Pacientes cadastrados</span>
+            <i class="bi bi-people-fill text-primary"></i>
+          </div>
+          <p class="display-6 fw-bold text-primary mb-0">{{ total_pacientes }}</p>
+          <small class="text-muted">Total de pacientes registrados no sistema.</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="text-muted small">Agendamentos de hoje</span>
+            <i class="bi bi-calendar2-day text-success"></i>
+          </div>
+          <p class="display-6 fw-bold text-success mb-0">{{ agendamentos_hoje }}</p>
+          <small class="text-muted">Sessões de Pilates agendadas para o dia atual.</small>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <span class="text-muted small">Atendimentos registrados</span>
+            <i class="bi bi-clipboard2-pulse-fill text-info"></i>
+          </div>
+          <p class="display-6 fw-bold text-info mb-0">{{ total_atendimentos }}</p>
+          <small class="text-muted">Histórico total de atendimentos realizados.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Área de “gráfico” simplificada (apenas visual para o MVP) -->
+  <div class="card border-0 shadow-sm mb-4">
+    <div class="card-body">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="mb-0">Resumo de movimentação</h5>
+        <span class="text-muted small"></span>
+      </div>
+      <div class="bg-light rounded-3 p-4 text-center text-muted" style="height: 200px;">
+        Área reservada para gráfico em uma versão futura do sistema.
+      </div>
+    </div>
+  </div>
+
+  <!-- Exemplo de tabela na dashboard (pode ser usada para últimos atendimentos futuramente) -->
+  <div class="card border-0 shadow-sm">
+    <div class="card-header bg-white">
+      <strong>Visão geral</strong>
+    </div>
+    <div class="card-body p-0">
+      <div class="table-responsive">
+        <table class="table mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Indicador</th>
+              <th>Descrição</th>
+              <th class="table-actions-md">Valor atual</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pacientes</td>
+              <td>Quantidade total de pacientes cadastrados no SisClyn.</td>
+              <td>{{ total_pacientes }}</td>
+            </tr>
+            <tr>
+              <td>Agendamentos de hoje</td>
+              <td>Quantidade de sessões marcadas para o dia atual.</td>
+              <td>{{ agendamentos_hoje }}</td>
+            </tr>
+            <tr>
+              <td>Atendimentos</td>
+              <td>Quantidade de registros no histórico de atendimentos.</td>
+              <td>{{ total_atendimentos }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+

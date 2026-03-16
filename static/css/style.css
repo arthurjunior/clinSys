@@ -1,0 +1,295 @@
+/* Estilos principais do sistema SisClyn
+   Mantido simples, organizado e próximo ao protótipo em Figma. */
+
+:root {
+  --sidebar-width: 240px;
+  --bg-main: #f3f5fb;
+  --bg-sidebar: #ffffff;
+  --primary: #2563eb;
+  --primary-soft: #e0edff;
+  --text-muted: #64748b;
+}
+
+body {
+  background-color: var(--bg-main);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* ---------- LAYOUT GERAL (DASHBOARD) ---------- */
+
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: var(--bg-sidebar);
+  border-right: 1px solid #e5e7eb;
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 18px rgba(15, 23, 42, 0.03);
+}
+
+.sidebar-logo {
+  margin-bottom: 32px;
+}
+
+.sidebar-logo-main {
+  display: block;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.sidebar-logo-sub {
+  display: block;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex-grow: 1;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #4b5563;
+  font-size: 0.9rem;
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.sidebar-link:hover {
+  background-color: #f3f4ff;
+  color: var(--primary);
+}
+
+.sidebar-link.active {
+  background-color: #e0edff;
+  color: var(--primary);
+  font-weight: 600;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.15);
+}
+
+.sidebar-link i {
+  font-size: 1rem;
+}
+
+.sidebar-footer {
+  margin-top: 24px;
+}
+
+.sidebar-logout {
+  color: #b91c1c;
+}
+
+.main-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  height: 64px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f1f5f9;
+  border-radius: 999px;
+  padding: 4px 12px;
+  max-width: 320px;
+  width: 100%;
+}
+
+.topbar-search i {
+  color: #94a3b8;
+}
+
+.topbar-search input {
+  border: none;
+  background-color: transparent;
+  box-shadow: none !important;
+  font-size: 0.85rem;
+}
+
+.topbar-search input:focus {
+  outline: none;
+}
+
+.topbar-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.topbar-user-name {
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.topbar-user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background-color: var(--primary);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.content-wrapper {
+  padding: 24px;
+}
+
+.app-footer {
+  margin-top: 32px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 12px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+/* ---------- CARDS / TABELAS ---------- */
+
+.card {
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+}
+
+.chart-container {
+  position: relative;
+  height: 260px;
+}
+
+.chart-legend .legend-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  margin-right: 4px;
+}
+
+.legend-dot-2025 {
+  background-color: rgba(59, 130, 246, 0.9);
+}
+
+.legend-dot-2026 {
+  background-color: rgba(249, 115, 22, 0.9);
+}
+
+.table thead th {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.table-actions-sm {
+  width: 120px;
+}
+
+.table-actions-md {
+  width: 150px;
+}
+
+/* ---------- LOGIN ---------- */
+
+/* Tela de login inicial, inspirada no protótipo */
+
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e7eb;
+}
+
+.login-panel {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px 28px;
+  width: 100%;
+  max-width: 340px;
+  border: 1px solid #e2e8f0;
+}
+
+.login-logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* ---------- RESPONSIVIDADE ---------- */
+
+@media (max-width: 992px) {
+  :root {
+    --sidebar-width: 210px;
+  }
+
+  .topbar {
+    padding-inline: 16px;
+  }
+
+  .content-wrapper {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 12px;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .sidebar-footer {
+    margin-top: 0;
+  }
+
+  .sidebar-link {
+    padding-inline: 8px;
+    font-size: 0.8rem;
+  }
+}
+
+

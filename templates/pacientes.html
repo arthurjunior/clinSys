@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h1 class="mb-0">Pacientes</h1>
+  </div>
+  <p class="text-muted">
+    Cadastro e listagem de pacientes da clínica.
+  </p>
+
+  <!-- Formulário de cadastro de paciente -->
+  <div class="card mb-4">
+    <div class="card-header">
+      Adicionar paciente
+    </div>
+    <div class="card-body">
+      <form method="post">
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label" for="nome">Nome</label>
+            <input type="text" class="form-control" id="nome" name="nome" required>
+          </div>
+          <div class="col-md-3">
+            <label class="form-label" for="telefone">Telefone</label>
+            <input type="text" class="form-control" id="telefone" name="telefone">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label" for="data_nascimento">Data de nascimento</label>
+            <input type="date" class="form-control" id="data_nascimento" name="data_nascimento">
+          </div>
+          <div class="col-md-3">
+            <label class="form-label" for="sexo">Sexo</label>
+            <select class="form-select" id="sexo" name="sexo">
+              <option value="">Selecione</option>
+              <option value="Feminino">Feminino</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Outro">Outro</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label class="form-label" for="diagnostico">Diagnóstico clínico</label>
+            <input type="text" class="form-control" id="diagnostico" name="diagnostico">
+          </div>
+          <div class="col-md-5">
+            <label class="form-label" for="queixa_principal">Queixa principal</label>
+            <input type="text" class="form-control" id="queixa_principal" name="queixa_principal">
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="observacoes">Observações</label>
+            <textarea class="form-control" id="observacoes" name="observacoes" rows="2"></textarea>
+          </div>
+        </div>
+        <div class="mt-3">
+          <button type="submit" class="btn btn-primary">
+            Adicionar paciente
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Tabela de pacientes -->
+  <div class="card">
+    <div class="card-header">
+      Pacientes cadastrados
+    </div>
+    <div class="card-body p-0">
+      <div class="table-responsive">
+        <table class="table table-striped mb-0">
+          <thead class="table-light">
+            <tr>
+              <th>Nome</th>
+              <th>Telefone</th>
+              <th>Diagnóstico</th>
+              <th class="table-actions-md">Ações</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for paciente in pacientes %}
+              <tr>
+                <td>{{ paciente.nome }}</td>
+                <td>{{ paciente.telefone }}</td>
+                <td>{{ paciente.diagnostico }}</td>
+                <td>
+                  <a href="{{ url_for('editar_paciente', id=paciente.id) }}" class="btn btn-sm btn-outline-primary">
+                    Editar
+                  </a>
+                  <form method="post" action="{{ url_for('excluir_paciente', id=paciente.id) }}"
+                        style="display:inline-block"
+                        onsubmit="return confirm('Tem certeza que deseja excluir este paciente?');">
+                    <button type="submit" class="btn btn-sm btn-outline-danger">
+                      Excluir
+                    </button>
+                  </form>
+                </td>
+              </tr>
+            {% else %}
+              <tr>
+                <td colspan="4" class="text-center text-muted py-3">
+                  Nenhum paciente cadastrado ainda.
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+
